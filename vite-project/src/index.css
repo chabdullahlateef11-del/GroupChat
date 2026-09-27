@@ -1,0 +1,37 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html,
+body,
+#root {
+  height: 100%;
+}
+
+:root {
+  /* Ye line browser ke dark-mode default ko force off karti hai,
+     warna input ka text white-on-white ho kar ghaib ho jata hai */
+  color-scheme: light;
+}
+
+body {
+  background: #F1F5F9;
+  font-family: "Inter", sans-serif;
+}
+
+/* Input/textarea ka text color hamesha dark rahe, chahe browser kuch bhi kare */
+input,
+textarea {
+  color: #1E293B;
+}
+
+/* Message list ke liye thin scrollbar */
+.chat-scroll::-webkit-scrollbar {
+  width: 6px;
+}
+.chat-scroll::-webkit-scrollbar-thumb {
+  background: #CBD5E1;
+  border-radius: 10px;
+}
